@@ -1,13 +1,8 @@
-const userInfo = {
-  username: "Ray",
-  password: "Test1234"
-}
-
 function createLoginTracker (userInfo){
   let attemptCount = 0
-  const passwordAttempt = (inputpass) =>{
+  return (passwordAttempt) =>{
     attemptCount = attemptCount + 1
-    if (passwordAttempt === password ){
+    if (passwordAttempt === userInfo.password ){
        if (attemptCount < 3){
         console.log("Login successful")
        }
