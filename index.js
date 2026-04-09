@@ -1,5 +1,5 @@
 const userInfo = {
-  "username": "user"
+  "username": "user",
   "password": "pass1234"
 }
 
