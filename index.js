@@ -3,7 +3,7 @@ function createLoginTracker (userInfo){
   return (passwordAttempt) =>{
     attemptCount++;
     if (passwordAttempt === userInfo.password ){
-       if (attemptCount < 3){
+       if (attemptCount <= 3){
         console.log("Login successful")
        }
        else if(attemptCount > 3){
@@ -11,7 +11,7 @@ function createLoginTracker (userInfo){
        }
     }
     else if (passwordAttempt !== userInfo.password){
-      if (attemptCount < 3){
+      if (attemptCount <= 3){
         console.log("Attempt ${attemptCount}: Login failed")
       }
       else{
