@@ -1,6 +1,6 @@
 const userInfo = {
-  "username": "user",
-  "password": "pass1234"
+  username: "user",
+  password: "pass1234"
 }
 
 function createLoginTracker (userInfo){
