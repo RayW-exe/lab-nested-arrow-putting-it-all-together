@@ -1,3 +1,8 @@
+const userInfo = {
+  "username": "user"
+  "password": "pass1234"
+}
+
 function createLoginTracker (userInfo){
   let attemptCount = 0
   return (passwordAttempt) =>{
@@ -14,11 +19,6 @@ function createLoginTracker (userInfo){
       }
     }
   } 
-}
-
-const userInfo = {
-  "username": "user1",
-  "password": "password123"
 }
 
 module.exports = {
